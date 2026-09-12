@@ -2,111 +2,135 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Автосервис в Саратове — ремонт автомобилей, кузовные работы, обслуживание ГАЗелей и эвакуаторов.">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Автосервис в Саратове — ремонт автомобилей, кузовные работы, ГАЗели, сварка, химчистка и эвакуаторы.">
   <meta name="theme-color" content="#070b0e">
-  <title>Автосервис — ремонт автомобилей в Саратове</title>
+  <title>Автосервис Саратов — ремонт автомобилей и ГАЗелей</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <a class="brand" href="#top" aria-label="Наверх">
-      <span class="brand__mark" aria-hidden="true">⌁</span>
+  <header class="header" id="top">
+    <a class="brand" href="#top" aria-label="Автосервис Саратов">
+      <span class="brand__car" aria-hidden="true"></span>
       <span>АВТОСЕРВИС <b>САРАТОВ</b></span>
     </a>
-    <nav class="nav" aria-label="Навигация">
+
+    <nav class="nav" aria-label="Основная навигация">
       <a href="#services">Услуги</a>
-      <a href="#why">Преимущества</a>
+      <a href="#benefits">Преимущества</a>
       <a href="#contacts">Контакты</a>
     </nav>
-    <a class="phone phone--top" href="tel:+79658880235">
-      <span>☎</span>
-      <b>+7 (965) 888-02-35</b>
+
+    <a class="header-phone" href="tel:+79658880235">
+      <i>☎</i>
+      <span><b>+7 (965) 888-02-35</b><small>Ирина</small></span>
     </a>
   </header>
 
-  <main id="top">
+  <main>
     <section class="hero">
-      <div class="hero__glow" aria-hidden="true"></div>
-      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__photo" aria-hidden="true"></div>
+      <div class="hero__shade" aria-hidden="true"></div>
 
-      <div class="hero__content">
-        <p class="eyebrow"><i></i> РЕМОНТ АВТОМОБИЛЕЙ В САРАТОВЕ</p>
-        <h1>Ремонт автомобилей<br><em>без лишних обещаний</em></h1>
-        <p class="hero__lead">Понятная диагностика, согласование работ до начала ремонта и аккуратный результат.</p>
-
+      <div class="hero__content reveal">
+        <p class="eyebrow"><span></span> РЕМОНТ АВТОМОБИЛЕЙ В САРАТОВЕ</p>
+        <h1>РЕМОНТ КУЗОВЩИНЫ<br><em>ГАЗЕЛЕЙ И ЛЕГКОВЫХ</em></h1>
+        <p class="hero__lead">Надёжный автосервис с понятными ценами, согласованием работ и индивидуальным подходом к каждому клиенту.</p>
         <div class="hero__actions">
           <a class="button button--primary" href="tel:+79658880235">Позвонить</a>
-          <a class="button button--ghost" href="https://yandex.ru/maps/" target="_blank" rel="noreferrer">Открыть на карте ↗</a>
-        </div>
-
-        <div class="hero__facts">
-          <span><b>01</b> Ремонт и диагностика</span>
-          <span><b>02</b> Кузовные работы</span>
-          <span><b>03</b> ГАЗели и эвакуаторы</span>
+          <a class="button button--ghost" href="#contacts">Контакты ↓</a>
         </div>
       </div>
 
-      <div class="hero__visual" aria-hidden="true">
-        <div class="garage-card garage-card--one">
-          <span>КУЗОВ</span><b>Ремонт</b><small>пороги · лонжероны · сварка</small>
-        </div>
-        <div class="garage-card garage-card--two">
-          <span>СЕРВИС</span><b>ТО</b><small>ходовая · тормоза · диагностика</small>
-        </div>
-        <div class="car-line"></div>
+      <div class="hero__badge reveal" aria-hidden="true">
+        <span>СЕРВИС</span>
+        <b>ЛЕГКОВЫЕ + ГАЗЕЛИ</b>
+        <small>Ремонт · кузов · сварка</small>
       </div>
     </section>
 
     <section class="section" id="services">
-      <header class="section__head">
-        <p>01 / НАШИ УСЛУГИ</p>
-        <h2>Всё основное — <em>в одном месте</em></h2>
+      <header class="section-title reveal">
+        <p>НАШИ УСЛУГИ</p><span></span>
       </header>
 
-      <div class="services">
-        <article><span>01</span><b>Ремонт автомобилей</b><p>Ходовая, тормоза, двигатель, диагностика и другое.</p></article>
-        <article><span>02</span><b>Кузовной ремонт</b><p>Пороги, лонжероны, днище, стаканы и сварочные работы.</p></article>
-        <article><span>03</span><b>Ремонт ГАЗелей</b><p>Кабины, покраска, рамы, двигатель и ходовая часть.</p></article>
-        <article><span>04</span><b>Химчистка салона</b><p>Профессиональная чистка салона любой сложности.</p></article>
-        <article><span>05</span><b>Сварочные работы</b><p>Металлоконструкции, ворота, навесы и ремонт деталей.</p></article>
-        <article><span>06</span><b>Эвакуаторы</b><p>Ремонт и изготовление эвакуаторов и платформ.</p></article>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-icon">🚗</div>
+          <h2>Ремонт автомобилей</h2>
+          <p>Ходовая, тормоза, двигатель, диагностика и другие работы.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">🛠</div>
+          <h2>Кузовной ремонт</h2>
+          <p>Пороги, лонжероны, днище, стаканы, восстановление кузова.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">🚐</div>
+          <h2>Ремонт ГАЗелей</h2>
+          <p>Кабины, покраска, рамы, двигатель, ходовая часть.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">▤</div>
+          <h2>Химчистка салона</h2>
+          <p>Профессиональная чистка салона автомобиля любой сложности.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">⚡</div>
+          <h2>Сварочные работы</h2>
+          <p>Металлоконструкции, ворота, навесы и ремонт деталей.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">🚚</div>
+          <h2>Эвакуаторы</h2>
+          <p>Ремонт и изготовление эвакуаторов и платформ.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section section--split" id="why">
-      <div>
-        <header class="section__head">
-          <p>02 / ПОЧЕМУ МЫ</p>
-          <h2>Просто и <em>по делу</em></h2>
+    <section class="section section--bottom" id="benefits">
+      <div class="benefits-block">
+        <header class="section-title reveal">
+          <p>ПОЧЕМУ ВЫБИРАЮТ НАС?</p><span></span>
         </header>
 
-        <div class="benefits">
-          <p><span>✓</span><b>Сначала согласование</b><small>Без неожиданных работ в счёте.</small></p>
-          <p><span>✓</span><b>Фото и видео по ходу ремонта</b><small>Покажем, что было и что сделали.</small></p>
-          <p><span>✓</span><b>Понятное общение</b><small>Объясняем без сложных терминов.</small></p>
-          <p><span>✓</span><b>Работа под задачу</b><small>От мелкого ремонта до серьёзных кузовных работ.</small></p>
+        <div class="benefit-grid">
+          <article class="benefit reveal"><i>✓</i><h3>Доступные цены</h3></article>
+          <article class="benefit reveal"><i>◎</i><h3>Опытные мастера</h3></article>
+          <article class="benefit reveal"><i>👍</i><h3>Индивидуальный подход</h3></article>
+          <article class="benefit reveal"><i>▣</i><h3>Фото- и видеоотчёты</h3></article>
+          <article class="benefit reveal"><i>✓</i><h3>Работы согласовываются заранее</h3></article>
         </div>
       </div>
 
-      <aside class="contact-card" id="contacts">
-        <p class="contact-card__label">03 / КОНТАКТЫ</p>
-        <h2>Связаться<br><em>в один клик</em></h2>
+      <div class="contacts-block reveal" id="contacts">
+        <div class="contact-copy">
+          <p class="contact-kicker">КОНТАКТЫ</p>
+          <a href="tel:+79658880235" class="contact-line"><i>☎</i><span><b>+7 (965) 888-02-35</b><small>Ирина</small></span></a>
+          <a href="https://yandex.ru/maps/" target="_blank" rel="noreferrer" class="contact-line"><i>●</i><span><b>г. Саратов</b><small>ул. Примерная, д. 10</small></span></a>
+          <p class="contact-note">Звоните или пишите — проконсультируем и подскажем по ремонту.</p>
 
-        <a class="contact-row" href="tel:+79658880235"><span>Телефон</span><b>+7 (965) 888-02-35</b><i>↗</i></a>
-        <a class="contact-row" href="https://t.me/" target="_blank" rel="noreferrer"><span>Telegram</span><b>Написать</b><i>↗</i></a>
-        <a class="contact-row" href="https://vk.com/" target="_blank" rel="noreferrer"><span>ВКонтакте</span><b>Открыть</b><i>↗</i></a>
-        <a class="contact-row" href="https://yandex.ru/maps/" target="_blank" rel="noreferrer"><span>Яндекс.Карты</span><b>г. Саратов, ул. Примерная, д. 10</b><i>↗</i></a>
+          <div class="socials">
+            <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram ↗</a>
+            <a href="https://vk.com/" target="_blank" rel="noreferrer">ВКонтакте ↗</a>
+          </div>
+        </div>
 
-        <p class="contact-card__note">Контакты сейчас стоят демонстрационные из референса — заменяются на реальные за минуту.</p>
-      </aside>
+        <a class="map-card" href="https://yandex.ru/maps/" target="_blank" rel="noreferrer" aria-label="Открыть в Яндекс Картах">
+          <div class="map-grid"></div>
+          <div class="map-pin">●</div>
+          <span>Открыть в Яндекс.Картах ↗</span>
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <span>© <b data-year></b> Автосервис</span>
+    <span>© <b data-year></b> Автосервис Саратов</span>
     <a href="#top">Наверх ↑</a>
   </footer>
+
+  <a class="mobile-call" href="tel:+79658880235">☎ Позвонить</a>
 
   <script src="script.js"></script>
 </body>
