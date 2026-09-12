@@ -10,6 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link=>{
 });
 
 const items=[...document.querySelectorAll('.reveal')];
+
 if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
   const observer=new IntersectionObserver(entries=>{
     entries.forEach(entry=>{
@@ -17,9 +18,10 @@ if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-moti
       entry.target.classList.add('is-visible');
       observer.unobserve(entry.target);
     });
-  },{threshold:.1,rootMargin:'0px 0px -7% 0px'});
+  },{threshold:.08,rootMargin:'0px 0px -5% 0px'});
+
   items.forEach((el,i)=>{
-    el.style.transitionDelay=`${(i%6)*55}ms`;
+    el.style.transitionDelay=`${(i%6)*45}ms`;
     observer.observe(el);
   });
 }else{
