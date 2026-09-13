@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
 <header class="site-header" id="top">
   <div class="container header-inner">
     <a class="logo" href="#top" aria-label="Автосервис Саратов">
@@ -16,20 +17,21 @@
       <span>АВТОСЕРВИС <b>САРАТОВ</b></span>
     </a>
 
-    <nav class="nav" aria-label="Основная навигация">
+    <nav class="nav" id="navigation" aria-label="Основная навигация">
       <a href="#services">Услуги</a>
       <a href="#benefits">Преимущества</a>
       <a href="#contacts">Контакты</a>
     </nav>
 
-    <a class="top-phone" href="tel:+79658880235">
+    <a class="top-phone" href="tel:+79658880235" aria-label="Позвонить Ирине: +7 (965) 888-02-35">
       <span class="phone-icon">☎</span>
       <span><b>+7 (965) 888-02-35</b><small>Ирина</small></span>
     </a>
+    <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span></button>
   </div>
 </header>
 
-<main>
+<main id="main">
   <section class="hero">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-overlay" aria-hidden="true"></div>
@@ -37,20 +39,23 @@
     <div class="container hero-inner">
       <div class="hero-copy reveal">
         <div class="kicker"><i></i><span>РЕМОНТ АВТОМОБИЛЕЙ В САРАТОВЕ</span></div>
-        <h1>РЕМОНТ КУЗОВЩИНЫ<br><em>ГАЗЕЛЕЙ И ЛЕГКОВЫХ</em></h1>
+        <h1>Ваш автомобиль.<br>Наша <em>работа.</em></h1>
+        <div class="hero-specialty">Кузовной ремонт · Легковые автомобили · ГАЗели</div>
         <p>Надёжный автосервис с гарантией качества, честными ценами и индивидуальным подходом к каждому клиенту.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:+79658880235">Позвонить</a>
-          <a class="btn btn-secondary" href="#contacts">Как нас найти</a>
+          <a class="btn btn-primary" href="tel:+79658880235">Обсудить ремонт <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="#services">Наши услуги <span aria-hidden="true">↓</span></a>
         </div>
       </div>
     </div>
+    <div class="container hero-bottom"><span>Согласуем работы заранее. Покажем результат.</span><a href="#services">Листайте ниже <span aria-hidden="true">↓</span></a></div>
   </section>
 
   <section class="services-section" id="services">
     <div class="container">
       <div class="section-label reveal"><b>НАШИ УСЛУГИ</b><i></i></div>
+      <div class="section-heading reveal"><h2>Вернём в строй.<br><span>И в хороший вид.</span></h2><p>От диагностики до восстановления кузова — найдём решение для вашего автомобиля.</p></div>
 
       <div class="services-grid">
         <article class="service-card reveal">
@@ -119,6 +124,7 @@
   <section class="bottom-section" id="benefits">
     <div class="container">
       <div class="section-label reveal"><b>ПОЧЕМУ ВЫБИРАЮТ НАС?</b><i></i></div>
+      <div class="section-heading reveal"><h2>Спокойно за машину.<br><span>Понятно по работе.</span></h2></div>
 
       <div class="benefits-grid">
         <div class="benefit reveal"><span>✓</span><p>Доступные цены</p></div>
@@ -130,7 +136,8 @@
 
       <div class="contact-area" id="contacts">
         <div class="contact-panel reveal">
-          <p class="contact-title">КОНТАКТЫ</p>
+          <p class="contact-title">ДАВАЙТЕ ОБСУДИМ</p>
+          <h2>С чего начнём?</h2>
 
           <a href="tel:+79658880235" class="contact-item">
             <span>☎</span>
